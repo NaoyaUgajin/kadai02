@@ -32,19 +32,25 @@ function kadai2($a, $b){
  
 #課題4
 <?php
-  function max_array($arr){
-// とりあえず配列の最初の要素を一番大きい値とする
- $max_number = $arr[0];
- foreach($arr as $a){
- //どうしたらいいかわからない・・・・
- $arr = array(5,4,3,2,1);
- echo max($arr);
+function max_array($arr){
+  // とりあえず配列の最初の要素を一番大きい値とする
+  $max_number = $arr[0];
+  foreach($arr as $a){
+     echo '$a = '. $a;
+     echo "\n";
+     echo '$max_number = '. $max_number;
+     echo "\n";
+    if ($max_number > $a){
+     $max_number = $a;
+     echo '$max_number = '. $max_number;
+     echo "\n";
+    }
+  }
+
+  return $max_number;
  }
 
- return $max_number;
- }
-
-echo max(array(5,4,3,2,1));
+ echo max_array(array(1,3,2,5,4));
 ?>
 
 #課題5

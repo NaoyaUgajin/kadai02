@@ -1,11 +1,11 @@
 #課題1
 <?php
-$name="宇賀神直也";
-if($name){
- echo "私は宇賀神直也です";   
-} else {
- echo "宇賀神直也ではありません";
-}
+$name = "田中";
+  if($name == "宇賀神直也"){
+   echo "私は宇賀神直也です";   
+  } else {
+   echo "宇賀神直也ではありません";
+  }
 
 ?>
 
@@ -23,8 +23,8 @@ echo $total;
 #課題3
 <?php
 $fruits = array("orange", "banana", "melon", "grape", "lychee");
-foreach($fruits as $fruits){
- echo "要素は" . $fruits;
+foreach($fruits as $f){
+ echo "要素は" . $f;
  echo "\n";
 }
 
