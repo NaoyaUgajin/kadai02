@@ -40,7 +40,7 @@ function max_array($arr){
      echo "\n";
      echo '$max_number = '. $max_number;
      echo "\n";
-    if ($max_number > $a){
+    if ($max_number < $a){
      $max_number = $a;
      echo '$max_number = '. $max_number;
      echo "\n";
